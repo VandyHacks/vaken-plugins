@@ -1,0 +1,29 @@
+{
+  "name": "vaken-plugin-google",
+  "version": "1.0.0",
+  "description": "Implements Google OAuth for use with Vaken.",
+  "main": "index.ts",
+  "dependencies": {
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VandyHacks/vaken-plugin-google.git"
+  },
+  "keywords": [
+    "oauth",
+    "google",
+    "vaken",
+    "vandyhacks"
+  ],
+  "author": "VandyHacks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VandyHacks/vaken-plugin-google/issues"
+  },
+  "homepage": "https://github.com/VandyHacks/vaken-plugin-google#readme"
+}
