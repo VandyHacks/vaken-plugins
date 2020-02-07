@@ -14,7 +14,3 @@ export const builder = (verifyCallback, callbackURL, clientID, clientSecret): an
 		);
 	return strategy;
 }
-
-export default {
-	builder,
-};
