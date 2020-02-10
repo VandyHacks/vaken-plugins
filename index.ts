@@ -1,7 +1,7 @@
 import { builder } from "./strategy"
 
 
-export class GoogleOauth {
+export class GoogleOAuth {
     permissions: string[];
     settings: any;
     name: string;           // api names
