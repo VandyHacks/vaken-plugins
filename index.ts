@@ -22,5 +22,5 @@ export class GoogleOAuth {
 }
 
 export default {
-    GoogleOauth
+    GoogleOAuth
 }
