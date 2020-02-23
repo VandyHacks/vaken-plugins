@@ -1,7 +1,11 @@
-import { Strategy } from 'passport-google-oauth20';
+import { Strategy } from "passport-google-oauth20";
 
-
-export const builder = (verifyCallback, callbackURL, clientID, clientSecret): any => {
+export const builder = (
+	processOAuthCallback,
+	callbackURL,
+	clientID,
+	clientSecret
+): any => {
 	const strategy = (models: any): Strategy =>
 		// FIXME: need to do error checking of url, id, secret
 		// if (!GOOGLE_CLIENT_ID) {
@@ -19,9 +23,11 @@ export const builder = (verifyCallback, callbackURL, clientID, clientSecret): an
 				clientID,
 				clientSecret,
 				passReqToCallback: false,
-				scope: ['openid', 'profile', 'email']
+				scope: ["openid", "profile", "email"]
 			},
-			(accessToken, refreshToken, profile, done) => void verifyCallback(models, profile, done)
+			(accessToken, refreshToken, profile, done) => {
+				void processOAuthCallback(models, profile, done);
+			}
 		);
 	return strategy;
-}
+};
