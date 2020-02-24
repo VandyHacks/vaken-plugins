@@ -1,4 +1,5 @@
 import { builder } from "./strategy";
+import logo from "./google_logo.svg";
 
 export class GoogleOAuth {
 	scopes: string[];
@@ -13,7 +14,7 @@ export class GoogleOAuth {
 		this.settings = settings;
 		this.name = "google";
 		this.displayName = "Google";
-		this.logo = "hee hee"; // FIXME:
+		this.logo = logo; // svg html as a string
 		const {
 			GOOGLE_CALLBACK_URL,
 			GOOGLE_CLIENT_ID,
