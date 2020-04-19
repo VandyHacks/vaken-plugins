@@ -1,6 +1,6 @@
 {
 	"name": "@vandyhacks/google-oauth",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Implements Google OAuth for use with Vaken.",
 	"main": "index.ts",
 	"dependencies": {
