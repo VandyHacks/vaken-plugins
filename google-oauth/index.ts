@@ -3,15 +3,18 @@ import { builder } from "./strategy";
 
 export class GoogleOAuth {
 	scopes: string[];
+
 	settings: any;
+
 	name: string; // api names
+
 	displayName: string; // frontend name
-	logo: string;
+
 	strategy: any;
 
-	constructor({ settings }) {
+	constructor(config: any) {
 		this.scopes = ["oauth"];
-		this.settings = settings;
+		this.settings = config.settings;
 		this.name = "google";
 		this.displayName = "Google";
 		const {

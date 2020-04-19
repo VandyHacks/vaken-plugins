@@ -1,10 +1,10 @@
 import { Strategy } from "passport-google-oauth20";
 
 export const builder = (
-	processOAuthCallback,
-	callbackURL,
-	clientID,
-	clientSecret
+	processOAuthCallback: any,
+	callbackURL: any,
+	clientID: any,
+	clientSecret: any
 ): any => {
 	const strategy = (models: any): Strategy =>
 		// FIXME: need to do error checking of url, id, secret
