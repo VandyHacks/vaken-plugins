@@ -1,5 +1,5 @@
 import { builder } from "./strategy";
-import logo from "./google_logo.svg";
+// import logo from "./google_logo.svg";
 
 export class GoogleOAuth {
 	scopes: string[];
@@ -14,11 +14,10 @@ export class GoogleOAuth {
 		this.settings = settings;
 		this.name = "google";
 		this.displayName = "Google";
-		this.logo = logo; // svg html as a string
 		const {
 			GOOGLE_CALLBACK_URL,
 			GOOGLE_CLIENT_ID,
-			GOOGLE_CLIENT_SECRET
+			GOOGLE_CLIENT_SECRET,
 		} = this.settings;
 		this.strategy = builder(
 			this.settings.processOAuthCallback,
@@ -30,5 +29,5 @@ export class GoogleOAuth {
 }
 
 export default {
-	GoogleOAuth
+	GoogleOAuth,
 };

@@ -23,7 +23,7 @@ export const builder = (
 				clientID,
 				clientSecret,
 				passReqToCallback: false,
-				scope: ["openid", "profile", "email"]
+				scope: ["openid", "profile", "email"],
 			},
 			(accessToken, refreshToken, profile, done) => {
 				void processOAuthCallback(models, profile, done);
