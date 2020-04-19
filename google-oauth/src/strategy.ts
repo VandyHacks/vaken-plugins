@@ -25,7 +25,7 @@ export const builder = (
 				passReqToCallback: false,
 				scope: ["openid", "profile", "email"],
 			},
-			(accessToken, refreshToken, profile, done) => {
+			(accessToken: any, refreshToken: any, profile: any, done: any) => {
 				void processOAuthCallback(models, profile, done);
 			}
 		);
