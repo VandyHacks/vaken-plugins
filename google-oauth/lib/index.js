@@ -1,10 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const strategy_1 = require("./strategy");
-// import logo from "./google_logo.svg";
 class GoogleOAuth {
     constructor(config) {
-        this.scopes = ["oauth"];
+        this.scopes = ["openid", "profile", "email"];
         this.settings = config.settings;
         this.name = "google";
         this.displayName = "Google";

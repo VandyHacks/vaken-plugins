@@ -18,8 +18,7 @@ exports.builder = (processOAuthCallback, callbackURL, clientID, clientSecret) =>
         clientID,
         clientSecret,
         passReqToCallback: false,
-        scope: ["openid", "profile", "email"],
-    }, (accessToken, refreshToken, profile, done) => {
+    }, (_, __, profile, done) => {
         void processOAuthCallback(models, profile, done);
     });
     return strategy;
