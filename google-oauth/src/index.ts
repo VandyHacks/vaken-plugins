@@ -1,5 +1,4 @@
 import { builder } from "./strategy";
-// import logo from "./google_logo.svg";
 
 export class GoogleOAuth {
 	scopes: string[];
@@ -13,7 +12,7 @@ export class GoogleOAuth {
 	strategy: any;
 
 	constructor(config: any) {
-		this.scopes = ["oauth"];
+		this.scopes = ["openid", "profile", "email"];
 		this.settings = config.settings;
 		this.name = "google";
 		this.displayName = "Google";

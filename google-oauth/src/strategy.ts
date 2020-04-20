@@ -23,9 +23,8 @@ export const builder = (
 				clientID,
 				clientSecret,
 				passReqToCallback: false,
-				scope: ["openid", "profile", "email"],
 			},
-			(accessToken: any, refreshToken: any, profile: any, done: any) => {
+			(_, __, profile: any, done: any) => {
 				void processOAuthCallback(models, profile, done);
 			}
 		);
