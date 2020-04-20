@@ -1,0 +1,36 @@
+{
+	"name": "@vandyhacks/github-oauth",
+	"version": "1.0.7",
+	"description": "Implements GitHub OAuth for use with Vaken.",
+	"main": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"dependencies": {
+		"@types/passport-github2": "^1.2.4",
+		"passport-github2": "^0.1.12"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc --declaration"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/VandyHacks/vaken-plugins.git"
+	},
+	"keywords": [
+		"oauth",
+		"google",
+		"vaken",
+		"vandyhacks"
+	],
+	"contributors": [
+		"VandyHacks",
+		"Benjamin Cooper <bencooper222@gmail.com> (https://benc.io)",
+		"Gabriel Ting (https://github.com/gfting)"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/VandyHacks/vaken-plugins/issues"
+	},
+	"homepage": "https://github.com/VandyHacks/vaken-plugins/tree/master/github-oauth"
+}
